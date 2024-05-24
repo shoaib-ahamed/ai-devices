@@ -96,11 +96,15 @@ const InputComponent: React.FC<InputComponentProps> = ({
           >
             <div className="text-center">
               <p
-                className={`text-md text-gray-500 rounded-xl p-10 text-white w-full ${
+                className={`text-md text-gray-200 text-center rounded-xl p-4 w-full ${
                   recording ? "bg-red-500" : "bg-green-500"
                 } prevent-image-drag cursor-pointer`}
               >
-                {recording ? <>release this</> : <>press this to operate</>}
+                {recording ? (
+                  <>release this to see the answer</>
+                ) : (
+                  <>press this to operate</>
+                )}
               </p>
             </div>
 

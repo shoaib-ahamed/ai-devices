@@ -154,18 +154,6 @@ const Main = () => {
         <MobileNotSupported />
       ) : (
         <>
-          <a
-            href="https://git.new/ai-devices"
-            target="_blank"
-            rel="noreferrer"
-            className="absolute top-7 right-7 w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center cursor-pointer"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-              alt="GitHub"
-              className="cursor-pointer w-6 h-6"
-            />
-          </a>
           <InputComponent
             onSubmit={handleSubmit}
             useTTS={useTTS}
